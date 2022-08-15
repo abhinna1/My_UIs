@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+}
+
+section .wrapper h1{
+    font-size: 40px;
+}
+
+body{
+    height: 200vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+    background: transparent;
+    position: sticky;
+    top: 0;
+    transition: 200ms;    
+}
+
+.nav-logo{
+    z-index: 0;
+}
+
+.nav-links{
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-link{
+    justify-content: end;
+    margin: 0 15px;
+    
+    
+}
+
+.nav-link a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.nav-toggler{
+    display: none;
+}
+
+.content img{
+    max-width: 300px;
+}
+
+
+/* container */
+
+.wrapper{
+    margin: 0 200px 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 50px 0;
+}
+
+.image-container-1{
+    background: url(https://assets.vogue.in/photos/5ce431b346cf5953f8b18c74/master/pass/featured.2.jpg);
+}
+
+.image-container-2{
+    background: url(https://wallpaperaccess.com/full/309838.jpg);
+}
+
+.image-container{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 60%;
+    height:600px;
+}
+
+.level-1{
+    background-color: white;
+}
+
+.level-2{
+    background-color: #eeee;
+}
+
+.text-container{
+    background-color: #002B5B;
+    color: white;
+    width:40%;
+    padding: 50px;
+    border-radius: 6px;
+    margin-left: -150px;
+}
+
+@media screen and (max-width: 720px){
+    .nav-toggler{
+        display: block;
+        z-index: 4;
+    }
+
+    .nav-links{
+        display: block;
+        position: fixed;
+        /* top: 80px; */
+        top: 0;
+        width: 100%;
+        left:100%;
+        padding:0;
+        transition: 200ms;
+    }
+
+    /* .nav-link:first-child{
+        padding-top:0;
+    } */
+    .nav-link{
+        margin:0;
+        height: 20px;
+        display: block;
+        padding: 20px;
+        background-color: #ffff;
+        border: solid 1px;
+        border-color: lightslategrey;
+    }
+
+    .nav-link:first-child{
+        background-color: transparent;
+        padding-bottom: 40px;
+        border: none;
+    }
+
+    /* Container */
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 0;
+        min-width: 100%;
+        
+    }
+
+    .image-container{
+        /* min-width: 200px; */
+        width: 80%;
+
+    }
+
+
+    .text-container{
+        margin-left: 0;
+        min-width: 150px;
+        width: 50%;
+        padding: 30px;
+        margin-top: -70px;
+    }
+
+
+
+}
+
+@media screen and (max-width:420px){
+    .image-container{
+        /* min-width: 200px; */
+        width: 90%;
+
+    }
+    .text-container{
+        min-width: 70%;
+        margin-top: -200px;
+    }
+}

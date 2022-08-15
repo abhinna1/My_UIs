@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: right;
+}
+
+.container .chat-logo{
+    width: 50%;
+    height: 50vh;
+
+}
+#chat-inner{
+    fill: aqua;
+    background: url(https://www.transparentpng.com/thumb/happy-person/VJdvLa-download-happy-blackman-png.png)
+
+    
+}
+#chat-outer{
+    fill: aqua;
+}

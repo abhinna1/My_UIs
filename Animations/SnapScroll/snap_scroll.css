@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+}
+
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    transition: 0s;
+}
+
+.container div{
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+    height: 100%;
+    transition: 0s;
+}
+
+.snap-one{
+    background-color: antiquewhite;
+}
+
+.snap-two{
+    background-color: aqua;
+}
+
+.snap-three{
+    background-color:brown;
+}
