@@ -14,11 +14,10 @@ document.addEventListener('scroll', ()=>{
     let nav = document.querySelector('#navbar');
     if(window.scrollY === 0){
         nav.style.backgroundColor = 'transparent';
-        nav.style.borderBottom = 'none';
     }
     else{
-        nav.style.backgroundColor = 'white';
-        
-        nav.style.borderBottom = 'solid 2px';
+        nav.style.backgroundColor = '#eeee';
     }
 })
+
+

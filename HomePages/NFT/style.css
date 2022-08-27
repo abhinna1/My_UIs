@@ -4,6 +4,7 @@
     margin: 0;
     /* font-family: 'Open Sans', sans-serif; */
     font-family: 'Playfair Display', serif;
+    /* overflow-x: hidden; */
 }
 
 p, strong{
@@ -136,7 +137,13 @@ body{
 
 }
 
+.card-container{
+    overflow:hidden;
+}
 
+.right-container{
+    overflow:hidden;
+}
 
 .container .left-container, .container .right-container{
     /* background-color: orange; */
@@ -144,6 +151,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 50%;
+    
 }
 
 .container .left-container div{

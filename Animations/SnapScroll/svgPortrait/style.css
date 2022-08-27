@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+}
+
+body{
+    /* height: 200vh; */
+    /* display: flex; */
+    background-color: #F4EAE6;
+}
+
+.container{
+    margin-top: 28.6%;
+    /* display: flex; */
+    /* border: solid orange; */
+    /* position: absolute; */
+    /* top: 20%; */
+    /* margin: 100px; */
+    /* position: relative; */
+    /* justify-content: flex-end; */
+    
+}
+
+.wave-container{
+    position: relative;
+    /* border: solid blue; */
+    height: 40vh;
+}
+.wave-container svg{
+    position: absolute;
+    /* border: solid red; */
+    max-width: 100%;
+    /* max-height: inherit; */
+    z-index: -1;
+    /* top: 0; */
+    bottom: 0;
+}
+
+.portrait{
+    position: absolute;
+    max-width: 400px;
+    bottom: 0;
+    right: 0;
+    /* border: solid green; */
+}
